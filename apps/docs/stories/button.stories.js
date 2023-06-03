@@ -6,6 +6,7 @@ export default {
 };
 
 export const Default = {
-  render: () => <Button>Hello</Button>,
-  name: "Default",
+  args: {
+    children: "Button",
+  },
 };

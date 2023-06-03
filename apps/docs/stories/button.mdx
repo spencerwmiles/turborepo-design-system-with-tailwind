@@ -1,5 +1,4 @@
-import { Button } from "@acme/core";
-import { Meta, Story, Canvas, ArgsTable } from "@storybook/blocks";
+import { Meta, Story, Controls } from "@storybook/blocks";
 import * as ButtonStories from './button.stories';
 
 <Meta of={ButtonStories} />
@@ -9,11 +8,8 @@ import * as ButtonStories from './button.stories';
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
 
 ## Props
-
-<ArgsTable of={Button} />
+<Controls />
 
 ## Examples
 
-<Canvas>
-  <Story of={ButtonStories.Default} />
-</Canvas>
+<Story of={ButtonStories.Default} />
