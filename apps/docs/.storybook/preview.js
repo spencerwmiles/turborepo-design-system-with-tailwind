@@ -1,1 +1,1 @@
-import "@acme/core/src/styles.css";
+import "@acme/core/styles.css";

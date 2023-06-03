@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-  stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"],
+  stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
   framework: {
     name: "@storybook/react-vite",
@@ -21,7 +21,7 @@ module.exports = {
             find: "@acme/core",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/acme-core/"
+              "../../../packages/acme-core/src"
             ),
           },
         ],
